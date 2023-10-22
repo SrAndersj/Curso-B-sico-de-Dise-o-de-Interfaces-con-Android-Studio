@@ -1,70 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:background="@android:color/white">
     <!--bottom, end ,  -->
 
-    <TextView
-        android:id="@+id/tvMainTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/black"
 
-        android:text="Hello PLatzi "
 
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/ivLoginLogo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
 
-    <TextView
-
-        android:layout_width="match_parent"
+        android:layout_width="160dp"
         android:layout_height="120dp"
-        android:background="@color/black"
+        android:src="@drawable/logo">
 
-        tools:textSize="60sp"
+        
+    </ImageView>
 
+<EditText
+    android:id="@+id/etLoginUsername"
+    android:layout_margin="12dp"
+    android:drawablePadding="12dp"
+    android:layout_below="@id/ivLoginLogo"
 
-        android:text="Hello 2 "
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
 
-        app:layout_constraintTop_toTopOf="parent" />
+    android:drawableStart="@drawable/vector_person"
+    android:hint="@string/hint_usuario"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
 
     <EditText
-       android:background="@mipmap/ic_launcher"
-        android:hint="Escribe tu nombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        />
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        android:layout_below="@id/etLoginUsername"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:drawableStart="@drawable/vector_lock"
+        android:hint="@string/hint_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 
-</LinearLayout>
+    <Button
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_margin="12dp"
+
+        android:background="@color/colorPrimary"
+        android:text="@string/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 
-    <!-- id colocaremos el nombre de como referirnos a este elemento en nuestra aplicacion-->
+</RelativeLayout>
 
 
-    <!--colocamos las letras mayusculas de nuestro elemento como minisculas TextView tv , luego contexto y que representa -->
 
-    <!--  @+id/tvMainTitle-->
+    <!-- esto es importante por si es tablet se estire
 
-    <!--android:inputType tipo de teclado-->
-
-    <!-- para llamar imagenes de fondo -->
-
-    <!--android:background="@mipmap/ic_launcher" -->
-
-    <!-- name space tools nos permite ver en tiempo de diseno como se vera-->
-
-    <!-- name space tools nos permite ver en tiempo de diseno como se vera-->
-
-    <!-- tools:text=" asdfadsf " -->
-    <!-- -->
-    <!-- -->
+    o si es celular pequeno se encoja -->
+    <!--     android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"-->
     <!-- -->
     <!-- -->
     <!-- -->

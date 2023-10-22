@@ -5,18 +5,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="end|bottom"
-    android:layout_height="match_parent">
+    android:gravity="center">
     <!--bottom, end ,  -->
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/black"
         android:text="Hello PLatzi "
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:hint="Escribe tu nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
@@ -24,3 +26,19 @@
 
 
 </LinearLayout>
+    <!-- wrap_content significa hacer crecer el elemento tanto como el contenido que tenga-->
+
+    <!-- si quiero que un elemento ocupe toda la pantalla uso match_parent   android:layout_width="match_parent" -->
+
+    <!-- hint nos permite mostrar una sugerencia mostrar una sugerencia de que es el texto -->
+
+    <!--  android:hint="Escribe tu nombre" -->
+
+    <!-- background podemos usar una imagen o un color-->
+
+    <!-- -->
+
+
+    <!-- -->
+
+    <!-- -->

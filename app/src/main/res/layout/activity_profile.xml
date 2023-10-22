@@ -11,13 +11,30 @@
     <!--bottom, end ,  -->
 
     <TextView
+        android:id="@+id/tvMainTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/black"
+
         android:text="Hello PLatzi "
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/black"
+
+        tools:textSize="60sp"
+
+
+        android:text="Hello 2 "
+
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+       android:background="@mipmap/ic_launcher"
         android:hint="Escribe tu nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,19 +43,28 @@
 
 
 </LinearLayout>
-    <!-- wrap_content significa hacer crecer el elemento tanto como el contenido que tenga-->
 
-    <!-- si quiero que un elemento ocupe toda la pantalla uso match_parent   android:layout_width="match_parent" -->
 
-    <!-- hint nos permite mostrar una sugerencia mostrar una sugerencia de que es el texto -->
+    <!-- id colocaremos el nombre de como referirnos a este elemento en nuestra aplicacion-->
 
-    <!--  android:hint="Escribe tu nombre" -->
 
-    <!-- background podemos usar una imagen o un color-->
+    <!--colocamos las letras mayusculas de nuestro elemento como minisculas TextView tv , luego contexto y que representa -->
 
+    <!--  @+id/tvMainTitle-->
+
+    <!--android:inputType tipo de teclado-->
+
+    <!-- para llamar imagenes de fondo -->
+
+    <!--android:background="@mipmap/ic_launcher" -->
+
+    <!-- name space tools nos permite ver en tiempo de diseno como se vera-->
+
+    <!-- name space tools nos permite ver en tiempo de diseno como se vera-->
+
+    <!-- tools:text=" asdfadsf " -->
     <!-- -->
-
-
     <!-- -->
-
+    <!-- -->
+    <!-- -->
     <!-- -->

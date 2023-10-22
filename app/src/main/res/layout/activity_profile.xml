@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
 
     android:layout_width="match_parent"
@@ -12,9 +12,11 @@
 
 
     <ImageView
+
+        android:layout_gravity="center_horizontal"
+
         android:id="@+id/ivLoginLogo"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+
 
         android:layout_width="160dp"
         android:layout_height="120dp"
@@ -24,13 +26,14 @@
     </ImageView>
 
 <EditText
-    android:id="@+id/etLoginUsername"
-    android:layout_margin="12dp"
-    android:drawablePadding="12dp"
-    android:layout_below="@id/ivLoginLogo"
 
-    android:layout_alignParentStart="true"
-    android:layout_alignParentEnd="true"
+    android:layout_marginTop="120dp"
+
+
+    android:id="@+id/etLoginUsername"
+
+    android:drawablePadding="12dp"
+
 
     android:drawableStart="@drawable/vector_person"
     android:hint="@string/hint_usuario"
@@ -38,12 +41,10 @@
     android:layout_height="wrap_content" />
 
     <EditText
-        android:layout_margin="12dp"
-        android:drawablePadding="12dp"
-        android:layout_below="@id/etLoginUsername"
 
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
+        android:layout_marginTop="180dp"
+        android:drawablePadding="12dp"
+
 
         android:drawableStart="@drawable/vector_lock"
         android:hint="@string/hint_password"
@@ -53,11 +54,8 @@
 
     <Button
 
-        android:layout_alignParentBottom="true"
 
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-
+        android:layout_gravity="bottom"
         android:layout_margin="12dp"
 
         android:background="@color/colorPrimary"
@@ -66,7 +64,7 @@
         android:layout_height="wrap_content"/>
 
 
-</RelativeLayout>
+</FrameLayout>
 
 
 

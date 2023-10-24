@@ -14,18 +14,24 @@
     <!--bottom, end ,  -->
 
     <include
+
+        layout="@layout/merge_logo"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/includeLogo"
+        app:layout_constraintEnd_toEndOf="parent"
 
-        layout="@layout/include_logo"/>
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <EditText
 
-        style="@style/AppTheme.EditTextStyle"
-
         android:id="@+id/etLoginUsername"
+
+        style="@style/AppTheme.EditTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
@@ -40,53 +46,51 @@
         android:hint="@string/hint_usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/includeLogo" />
+        app:layout_constraintTop_toBottomOf="@id/ivLoginLogo" />
 
     <EditText
 
         style="@style/AppTheme.EditTextStyle"
 
-        app:layout_constraintTop_toBottomOf="@id/etLoginUsername"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_default"
 
-        android:layout_width="match_parent"
-
-
-        android:layout_height="wrap_content"
         android:drawableStart="@drawable/vector_lock"
-        android:drawablePadding="12dp"
-        android:hint="@string/hint_password" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:drawablePadding="12dp"
+
+
+        android:hint="@string/hint_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etLoginUsername" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/profile_image"
         android:layout_width="96dp"
         android:layout_height="96dp"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:src="@drawable/profile"
+        app:civ_border_color="#FF000000"
         app:civ_border_width="2dp"
-        app:civ_border_color="#FF000000"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
 
-        app:layout_constraintBottom_toBottomOf="parent"
-
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:text="@string/button_login" />
+        android:text="@string/button_login"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
     <!--LIBRERIA DE GITHUB QUE VAMOS A USAR -->

@@ -13,22 +13,13 @@
     >
     <!--bottom, end ,  -->
 
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/includeLogo"
 
-    <ImageView
+        layout="@layout/include_logo"/>
 
-        android:id="@+id/ivLoginLogo"
-        android:layout_width="@dimen/width_logo"
-        android:layout_height="@dimen/height_logo"
-
-        android:src="@drawable/logo"
-
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-    </ImageView>
 
     <EditText
 
@@ -49,7 +40,7 @@
         android:hint="@string/hint_usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivLoginLogo" />
+        app:layout_constraintTop_toBottomOf="@id/includeLogo" />
 
     <EditText
 
